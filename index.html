@@ -12,31 +12,65 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 	</head>
-	<body>
+	<body style="background-color: #D8DCDE">
 	<div class="jumbotron" style="background-color: #41B7E4;">
 		<a class="navbar-brand" href="#">
-        <img alt="Brand" src="imgs/Logo.png" width="100px">
+        
     	</a>
 		<div class="container">
-
-			<div>
-	    	<h1>Newaygo County</h1>
-	    	<h3>Geeks Engineering Awesome Robotic Solutions</h3>
-	    	</div>
+			<div class="col-md-4">
+				<img alt="Brand" src="imgs/Logo.png" width="200px">
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+		    	<h1>Newaygo County</h1>
+		    	<h3>Geeks Engineering Awesome Robotic Solutions</h3>
+		    	</div>
+		    </div>
 		</div>
-		
 		
 	</div>
 	
-		 
-		
-		<a href="https://www.facebook.com/Fan-Page-of-1918-NC-GEARS-179172515489660/">
-			<span class="btn btn-lg btn-primary fa-stack fa-lg">
-				<i class="fa fa-facebook fa-stack-1x"></i>
-			</span>
-		</a>
+<div class="container">
+<center>
+	<img class="mySlides" src="imgs/feedingAmerica.jpg" width="80%" height="400px">
+	<img class="mySlides" src="imgs/gregWayneTom.jpg" width="80%" height="400px">
+	<img class="mySlides" src="imgs/wayne.jpg" width="80%" height="400px">
+	<img class="mySlides" src="imgs/winner.jpg" width="80%" height="400px">
+</center>
+</div>
+
+<footer class="footer">
+      <div class="container">
+	        		
+				<a href="https://www.facebook.com/Fan-Page-of-1918-NC-GEARS-179172515489660/">
+					<span class="btn btn-lg btn-primary fa-stack fa-lg">
+						<i class="fa fa-facebook fa-stack-1x"></i>
+					</span>
+				</a>
+			
+      </div>
+</footer>	
+	
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+		</script>
 	</body>
 </html> 
